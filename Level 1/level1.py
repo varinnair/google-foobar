@@ -22,5 +22,3 @@ def answer(data, n):
     
     print(data)
     return data
-
-answer([1, 2, 2, 3, 3, 3, 4, 5, 5], 1)
