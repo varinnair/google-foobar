@@ -1,45 +1,6 @@
 #level 2-2
 #actually had to do this one
-"""
-def answer(l):
-    majors = {}
-    minors = {}
-    revisions = {}
-
-    i = 0
-    while i < len(l):
-        version = l[i].split(".")
-        a = 0
-        b = 0
-        c = 0
-        if len(version) == 3:
-            a = version[0]
-            b = version[1]
-            c = version[2]
-        elif len(version) == 2:
-            a = version[0]
-            b = version[1]
-            c = -1
-        else:
-            a = version[0]
-            b = c = -1
-        
-
-        if a not in majors.keys():
-            majors[a] = []
-        
-        if b not in minors.keys():
-            minors[b] = []
-        
-        if c not in revisions.keys():
-            revisions[c] = []
-        
-        majors[a].append(i)
-        minors[b].append(i)
-        revisions[c].append(i)
-
-        i += 1
-"""
+# Python 3.6 version
 
 def cmp_to_key(mycmp):
     'Convert a cmp= function into a key= function'
