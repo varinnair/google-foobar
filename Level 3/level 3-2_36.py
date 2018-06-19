@@ -1,10 +1,10 @@
-#Python 2.7 version
+#Python 3.6 version
 
 def answer(n):
-    n = long(n)
-
+    n = int(n)
+    
     table = {1: 0}
-
+    
     def answer_helper(n):
         if n in table:
             return table[n]
@@ -18,4 +18,5 @@ def answer(n):
         
     
     answer_helper(n)
+
     return table[n]
